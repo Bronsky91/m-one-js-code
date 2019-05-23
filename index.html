@@ -1,0 +1,48 @@
+<html>
+<head>
+    <script type="text/javascript" src="main.js"></script>
+    <style>
+        .dashboard {
+            border: 1px solid purple;
+            padding: 5px;
+        }
+
+        .widget {
+            margin: 5px;
+            padding: 5px;
+            border: 1px solid orange;
+        }
+
+        .text_black {
+            color : black;
+        }
+        .text_green {
+            color : green;
+        }
+        .text_red {
+            color : red;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Hello Galaxy</h1>
+    <h4>This is our sales dashboard prototype. When you Add Sales in the widget it should display on the dashboard</h2>
+    <h4>If your sales are <span class="text_red">red</span> that means you lost money!</h2>
+    <div class="dashboard">
+        <h2>Dashboard</h2>
+        <span>Incoming New Sales</span>
+        <span id=dashbaordSales>0</span>
+        <ul id=salesList>
+        </ul>
+        <div class="widget">
+            <h3>Widget</h2>
+            <input id="widgetText" type="text" />
+            <input id="widgetButton" type="button"  value="Add Sales"/>
+            
+            <span id="widgetValue"></span>
+        </div>
+    </div>
+</body>
+
+</html>
